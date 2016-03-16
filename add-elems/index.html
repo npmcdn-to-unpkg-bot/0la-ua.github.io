@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS srpt</title>	
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<link rel="stylesheet" href="s.css">
+	<style>
+	.content{
+		width: 30%;
+		float: left;
+		font-size: 16px;
+		font-family:  "Times New Roman", Serif;
+	}
+	 #ul-id ul {
+	 	margin: 0 auto;
+	 	padding: 5px;
+	 	list-style: none;	 	
+	 }
+	 li, .del-el {
+	 	background: #999;
+	 	text-align: center;
+	 }
+	 li {	 	 	
+	 	width: 50%;
+	 	display: inline-block;
+	 	margin-bottom: -1px;
+	 }
+	 .el, .del-el {
+	 padding: 5px;	
+	 border: 1px solid black;
+	 }
+	 .del-el{
+	 	margin-left: -1px;
+	 	padding-bottom: 6px;
+	 	border-right: 0px;
+	 	cursor: pointer;
+	 }
+	 .btn-style{	 
+	 	display: block;	
+	 	margin: 10px auto;
+	 	left: 0;
+	 	right: 0;
+	 }
+	</style>
+</head>
+<body>
+<div class="content">
+<ul id="ul-id" class="ul-list">
+	<li class="el">элемент 1<span class="del-el">x</span></li>
+	<li class="el">элемент 2<span class="del-el">x</span></li>
+	<li class="el">элемент 3<span class="del-el">x</span></li>
+</ul>
+<div><button id="btn-id" class="btn-style" onclick='add_el()'>+ элемент</button></div>
+</div>
+<script src="srpt.js"></script>
+</body>
+</html>
