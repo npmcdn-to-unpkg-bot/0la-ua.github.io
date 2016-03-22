@@ -59,7 +59,7 @@ var arrP = [];
 
 	
 
-
+(function(){
 document.getElementsByClassName("col-1-2")[0].onclick = function(){
 	var k=0;
 
