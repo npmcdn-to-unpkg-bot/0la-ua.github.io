@@ -1,10 +1,3 @@
-// var arrT=[];
-// $.getJSON('http://pokeapi.co/api/v1/type/?limit=999', function(data) {
-// 	for (var i=0;i<data.objects.length;i++){
-// 		arrT[i]=data.objects[i].name;
-// 	}
-// });
-
 var buttonsStyle={
 		type:[
 		["Normal", "#ffffff","#8f8f8f"],
@@ -32,7 +25,7 @@ var buttonsStyle={
 var singleP = document.getElementsByClassName("single");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
-	imgURL2="') 50% 50%";
+	imgURL2="') no-repeat 50% 50%";
 
 // var arP=initdata();
 var arrP = [];
@@ -66,16 +59,28 @@ var arrP = [];
 
 	
 
-//console.log(arrP);
 
-// $(document).ready(function(){
-// });
-(function(){
+document.getElementsByClassName("col-1-2")[0].onclick = function(){
+	var k=0;
 
-//console.log(arrP);
-// for(var i=0;i<arrP.length;i++){
-// 	console.log(arrP[i].speed);
-// }
+	if (event.target.className==="single") k=(event.target.id)[event.target.id.length-1];
+	else if(event.target.parentElement.className==="single")k=(event.target.parentElement.id)[event.target.parentElement.id.length-1];
+	showinfo(arrP[k-1]);
 
+}
 
-})()
+})();
+
+function showinfo(arr){
+	document.getElementById("info_name").innerHTML=arr.nameP;
+	document.getElementById("td_atck").innerHTML=arr.attack;
+	document.getElementById("td_def").innerHTML=arr.defense;
+	document.getElementById("td_hp").innerHTML=arr.hp;
+	document.getElementById("td_sp_atk").innerHTML=arr.sp_atk;
+	document.getElementById("td_sp_def").innerHTML=arr.sp_def;
+	document.getElementById("td_speed").innerHTML=arr.speed;
+	document.getElementById("td_weight").innerHTML=arr.weight;
+	document.getElementById("td_ttl").innerHTML=arr.total_m;
+	document.getElementsByClassName("imgb")[0].style.background=imgURL1+imgURL+arr.idP+".png"+imgURL2;
+
+};
