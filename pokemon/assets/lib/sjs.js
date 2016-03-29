@@ -1,5 +1,11 @@
-var buttonsStyle={
-		type:[
+// var arrT=[];
+// $.getJSON('http://pokeapi.co/api/v1/type/?limit=999', function(data) {
+// 	for (var i=0;i<data.objects.length;i++){
+// 		arrT[i]=data.objects[i].name;
+// 	}
+// });
+
+var buttonsStyle=[
 		["Normal", "#ffffff","#8f8f8f"],
 		["Fighting", "#bfc4fd", "#595b75"],
 		["Flying", "#71e2fe", "#377281"],
@@ -19,18 +25,14 @@ var buttonsStyle={
 		["Fairy", "#fabef2", "#987093"],
 		["Unknown", "#e0dde0", "#f6f2f5"],
 		["Shadow", "#ebebeb", "#aeaeae"],
-		["Psychic", "#b6a7c0", "#7c6889"]]
-};
+		["Psychic", "#b6a7c0", "#7c6889"]];
 
 var singleP = document.getElementsByClassName("single");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
 	imgURL2="') no-repeat 50% 50%";
-
-// var arP=initdata();
 var arrP = [];
 //img http://pokeapi.co/media/img/19.png
-
 	$.getJSON('http://pokeapi.co/api/v1/pokemon/?limit=12', function(data) {    
 	 	 for (var i=0; i<data.objects.length; i++){
 	 	 	//console.log(data.objects[i]);  getall
@@ -52,24 +54,45 @@ var arrP = [];
 		for (var i=0; i<singleP.length;i++){
 			singleP[i].children[1].innerHTML=arrP[i].nameP;
 			document.getElementsByClassName("img"+(i+1))[0].style.background=imgURL1+imgURL+arrP[i].idP+".png"+imgURL2;
-
+			for(var j=0;j<arrP[i].powerP.length;j++) addEl(arrP[i].powerP[j].name,"single"+(i+1));
 		}
 	});	
-
-
-	
-
+// $(document).ready(function(){
+// });
+var card=0;
 (function(){
 document.getElementsByClassName("col-1-2")[0].onclick = function(){
 	var k=0;
-
-	if (event.target.className==="single") k=(event.target.id)[event.target.id.length-1];
-	else if(event.target.parentElement.className==="single")k=(event.target.parentElement.id)[event.target.parentElement.id.length-1];
+	console.log("t.id "+event.target.id);
+	console.log("p.id "+event.target.parentElement.id);	
+	k=index(event.target.id)||index(event.target.parentElement.id);
+	console.log("k=",k)	
+	if (card===0) {		
+		document.getElementsByClassName("infobox")[0].style.display="block";card=k;
+	}
+	else if (card===k){
+		document.getElementsByClassName("infobox")[0].style.display="none";
+		card=0;
+	}
+	else card=k;
+	// console.log(event.srcElement.children);
+	// console.log(event.srcElement.parents);
 	showinfo(arrP[k-1]);
 
 }
-
 })();
+function addEl(powername,classname){
+	var b=document.createElement("button"),t=document.createTextNode(powername);
+	b.appendChild(t);
+	b.className="but-pow "+powername;
+	document.getElementById(classname).appendChild(b);
+}
+function index(str){
+	var s1=str[str.length-2]
+	s2=str[str.length-1];
+	if (isNaN(s1)) return s2;
+	else return s1+s2;
+}
 
 function showinfo(arr){
 	document.getElementById("info_name").innerHTML=arr.nameP;
