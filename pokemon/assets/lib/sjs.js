@@ -1,10 +1,3 @@
-// var arrT=[];
-// $.getJSON('http://pokeapi.co/api/v1/type/?limit=999', function(data) {
-// 	for (var i=0;i<data.objects.length;i++){
-// 		arrT[i]=data.objects[i].name;
-// 	}
-// });
-
 var buttonsStyle=[
 		["Normal", "#ffffff","#8f8f8f"],
 		["Fighting", "#bfc4fd", "#595b75"],
@@ -30,13 +23,14 @@ var buttonsStyle=[
 var singleP = document.getElementsByClassName("single");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
-	imgURL2="') no-repeat 50% 50%";
-var arrP = [];
-//img http://pokeapi.co/media/img/19.png
-	$.getJSON('http://pokeapi.co/api/v1/pokemon/?limit=12', function(data) {    
+	imgURL2="') no-repeat 50% 50%",
+	URI="http://pokeapi.co/api/v1/pokemon/?limit=12";	
+arrP=[], nextURL=URI;
+function getPokemons12() {
+	$.getJSON(nextURL, function(data) {		 
 	 	 for (var i=0; i<data.objects.length; i++){
 	 	 	//console.log(data.objects[i]);  getall
-	 	 	arrP[i]={};
+	 	 	arrP[i]={};	 	 		 	 	
 	 		arrP[i].idP=data.objects[i].pkdx_id;
 	 		arrP[i].nameP=data.objects[i].name;
 	 		arrP[i].urlP=data.objects[i].resource_uri;
@@ -50,23 +44,35 @@ var arrP = [];
 	 		arrP[i].weight=data.objects[i].weight;
 	 		arrP[i].total_m=data.objects[i].moves.length;
 	 	 };
-
 		for (var i=0; i<singleP.length;i++){
 			singleP[i].children[1].innerHTML=arrP[i].nameP;
 			document.getElementsByClassName("img"+(i+1))[0].style.background=imgURL1+imgURL+arrP[i].idP+".png"+imgURL2;
 			for(var j=0;j<arrP[i].powerP.length;j++) addEl(arrP[i].powerP[j].name,"single"+(i+1));
-		}
-	});	
-// $(document).ready(function(){
-// });
-var card=0;
-(function(){
+		};
+		nextURL="http://pokeapi.co"+data.meta.next;		
+	});
+};
+
+getPokemons12(nextURL);
+card=0;
 document.getElementsByClassName("col-1-2")[0].onclick = function(){
-	var k=0;
-	console.log("t.id "+event.target.id);
-	console.log("p.id "+event.target.parentElement.id);	
+	if (event.target.id==="getPokemons") {
+		arrP=[];
+		var b=document.getElementsByTagName("button");
+			for(var i=0;i<b.length-1;i++) b[i].remove();
+		getPokemons12(nextURL);		
+	}
+	else {
+		singlePokemon(event);
+	};
+};
+
+(function(){
+
+})();
+function singlePokemon(event){
+	var k=0;	
 	k=index(event.target.id)||index(event.target.parentElement.id);
-	console.log("k=",k)	
 	if (card===0) {		
 		document.getElementsByClassName("infobox")[0].style.display="block";card=k;
 	}
@@ -75,17 +81,18 @@ document.getElementsByClassName("col-1-2")[0].onclick = function(){
 		card=0;
 	}
 	else card=k;
-	// console.log(event.srcElement.children);
-	// console.log(event.srcElement.parents);
 	showinfo(arrP[k-1]);
-
 }
-})();
 function addEl(powername,classname){
 	var b=document.createElement("button"),t=document.createTextNode(powername);
 	b.appendChild(t);
 	b.className="but-pow "+powername;
 	document.getElementById(classname).appendChild(b);
+}
+function delEl(){
+	var b=document.getElementsByTagName("button");
+	for(var i=0;i<b.length;i++)
+		if (b[i].id!=="getPokemons") b[i].remove();
 }
 function index(str){
 	var s1=str[str.length-2]
@@ -93,7 +100,6 @@ function index(str){
 	if (isNaN(s1)) return s2;
 	else return s1+s2;
 }
-
 function showinfo(arr){
 	document.getElementById("info_name").innerHTML=arr.nameP;
 	document.getElementById("td_atck").innerHTML=arr.attack;
@@ -105,5 +111,4 @@ function showinfo(arr){
 	document.getElementById("td_weight").innerHTML=arr.weight;
 	document.getElementById("td_ttl").innerHTML=arr.total_m;
 	document.getElementsByClassName("imgb")[0].style.background=imgURL1+imgURL+arr.idP+".png"+imgURL2;
-
 };
