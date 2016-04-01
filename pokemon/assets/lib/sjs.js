@@ -1,3 +1,10 @@
+// var arrT=[];
+// $.getJSON('http://pokeapi.co/api/v1/type/?limit=999', function(data) {
+// 	for (var i=0;i<data.objects.length;i++){
+// 		arrT[i]=data.objects[i].name;
+// 	}
+// });
+
 var buttonsStyle=[
 		["Normal", "#ffffff","#8f8f8f"],
 		["Fighting", "#bfc4fd", "#595b75"],
@@ -19,7 +26,6 @@ var buttonsStyle=[
 		["Unknown", "#e0dde0", "#f6f2f5"],
 		["Shadow", "#ebebeb", "#aeaeae"],
 		["Psychic", "#b6a7c0", "#7c6889"]];
-
 var singleP = document.getElementsByClassName("single");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
@@ -49,29 +55,40 @@ function getPokemons12() {
 			document.getElementsByClassName("img"+(i+1))[0].style.background=imgURL1+imgURL+arrP[i].idP+".png"+imgURL2;
 			for(var j=0;j<arrP[i].powerP.length;j++) addEl(arrP[i].powerP[j].name,"single"+(i+1));
 		};
-		nextURL="http://pokeapi.co"+data.meta.next;		
+		nextURL="http://pokeapi.co"+data.meta.next;
 	});
 };
 
 getPokemons12(nextURL);
 card=0;
+
+
+
 document.getElementsByClassName("col-1-2")[0].onclick = function(){
+	var b;
 	if (event.target.id==="getPokemons") {
 		arrP=[];
-		var b=document.getElementsByTagName("button");
-			for(var i=0;i<b.length-1;i++) b[i].remove();
-		getPokemons12(nextURL);		
+		//document.getElementsByClassName("infobox")[0].style.display="none";
+		do{
+			b=document.getElementsByTagName("button");
+			b[0].remove();
+		}while (b.length>1);
+		getPokemons12(nextURL);
 	}
 	else {
 		singlePokemon(event);
 	};
 };
-
 (function(){
-
 })();
 function singlePokemon(event){
-	var k=0;	
+	var k=0;
+	//console.log("t.id "+event.target.id);
+	//console.log("p.id "+event.target.parentElement.id);
+	//console.log("t clName "+event.target.className);
+	// console.log("e.targ "+event.target.className);
+	// console.log("e.parnt "+event.target.parentElement.className);
+	// console.log("e.cTarg "+event.currentTarget.className);
 	k=index(event.target.id)||index(event.target.parentElement.id);
 	if (card===0) {		
 		document.getElementsByClassName("infobox")[0].style.display="block";card=k;

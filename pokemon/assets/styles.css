@@ -28,7 +28,7 @@ body {
 }
 .infobox {
 	display: none;
-	width: 70%;
+	width: 70%;	
 	margin: 0 auto;
 	padding: 10px;
 	min-height: 300px;
@@ -36,7 +36,8 @@ body {
 }
 /*grid*/
 .row {
-	margin-bottom: 5px;		
+	margin-bottom: 5px;	
+	min-width: 300px;	
 }
 .row:after {
 	display: block;
@@ -55,7 +56,7 @@ body {
 	
 }
 .col-1-2 {
-	width: 45%;
+	width: 45%;	
 	height: 30px;
 	padding: 5px;	
 }
@@ -66,9 +67,10 @@ body {
 /*end grid*/
 .single {
 	width: 100%;
+	min-width: 90px;
 	min-height: 220px;	
 	border: 1px solid black;
-	border-radius: 5px;
+	border-radius: 5px;	
 }
 .single:hover {
 	cursor: pointer;
@@ -101,6 +103,7 @@ body {
 }
 table { 
     width: 100%;
+	min-width: 200px;
     border: 1px solid black;
     border-collapse: collapse;
     margin-bottom: 10px;
@@ -137,6 +140,9 @@ table {
 }
 .fire {
 	background: -webkit-linear-gradient(top, rgba(240,201,104,1) 0%, rgba(252,70,70,1) 100%);
+}
+.fairy {
+	background: -webkit-linear-gradient(top, rgba(253,208,247,1) 0%, rgba(253,123,236,1) 100%);
 }
 .flying {
 	background: -webkit-linear-gradient(top, rgba(113,226,254,1) 0%, rgba(55,114,129,1) 100%);
@@ -181,6 +187,8 @@ table {
 .imgb {
 	width: 180px;
 	height: 180px;
+    max-width: 180px;
+    min-width: 80px;	
 	margin: 15px auto;
 	border: 1px solid black;		
 }
