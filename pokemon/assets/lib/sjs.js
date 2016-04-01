@@ -1,31 +1,3 @@
-// var arrT=[];
-// $.getJSON('http://pokeapi.co/api/v1/type/?limit=999', function(data) {
-// 	for (var i=0;i<data.objects.length;i++){
-// 		arrT[i]=data.objects[i].name;
-// 	}
-// });
-
-var buttonsStyle=[
-		["Normal", "#ffffff","#8f8f8f"],
-		["Fighting", "#bfc4fd", "#595b75"],
-		["Flying", "#71e2fe", "#377281"],
-		["Poison", "#e7a7fe", "#755282"],
-		["Ground", "#fcc298", "#71533d"],
-		["Rock", "#a6b0b6", "#474c4f"],
-		["Bug", "#64cc7a", "#30613a"],
-		["Ghost", "#79fcfe", "#326768"],
-		["Steel", "98bdcc", "#5f808e"],
-		["Fire", "5f808e", "#f36731"],
-		["Water", "#aebefd", "#697abc"],
-		["Grass", "#96fd96", "#5aba5a"],
-		["Electric", "#fcf9aa", "#dfd64e"],
-		["Ice", "#cbfcf2", "#4dd8bc"],
-		["Dragon", "#d8c64d", "#fef347"],
-		["Dark", "#b9b7c6", "#7a7985"],
-		["Fairy", "#fabef2", "#987093"],
-		["Unknown", "#e0dde0", "#f6f2f5"],
-		["Shadow", "#ebebeb", "#aeaeae"],
-		["Psychic", "#b6a7c0", "#7c6889"]];
 var singleP = document.getElementsByClassName("single");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
@@ -58,12 +30,9 @@ function getPokemons12() {
 		nextURL="http://pokeapi.co"+data.meta.next;
 	});
 };
-
+if (nextURL===null) nextURL=URI;
 getPokemons12(nextURL);
 card=0;
-
-
-
 document.getElementsByClassName("col-1-2")[0].onclick = function(){
 	var b;
 	if (event.target.id==="getPokemons") {
@@ -82,13 +51,7 @@ document.getElementsByClassName("col-1-2")[0].onclick = function(){
 (function(){
 })();
 function singlePokemon(event){
-	var k=0;
-	//console.log("t.id "+event.target.id);
-	//console.log("p.id "+event.target.parentElement.id);
-	//console.log("t clName "+event.target.className);
-	// console.log("e.targ "+event.target.className);
-	// console.log("e.parnt "+event.target.parentElement.className);
-	// console.log("e.cTarg "+event.currentTarget.className);
+	var k=0;	
 	k=index(event.target.id)||index(event.target.parentElement.id);
 	if (card===0) {		
 		document.getElementsByClassName("infobox")[0].style.display="block";card=k;
