@@ -82,7 +82,7 @@ body {
 }
 .loadinfo {
 	width: 95%;
-	margin-left: 5px;	
+	margin-left: 5px;		
 }
 .loadinfo button {
 	text-align: center;
@@ -96,7 +96,7 @@ body {
 	margin-bottom: 10px;
 	cursor: pointer;
 }
-.infoname {
+.infoname {	
 	text-align: center;
 	font-size: 18px;
 	margin: 10px;
