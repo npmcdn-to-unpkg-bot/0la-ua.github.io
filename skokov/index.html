@@ -5,6 +5,7 @@
 	<title>Skokov</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
 	<link rel="stylesheet" type="text/css" href="assets/grids.css">
+	<script type="text/javascript" src="assets/jquery-1.12.0.min.js"></script>
 </head>
 <body>
 	<header>
@@ -13,10 +14,10 @@
 				<p class="logo">SKOKOV</p>
 				<ul class="menu">
 					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#aboutus">About Us</a></li>
+					<li><a href="#newsblock">News</a></li>
+					<li><a href="#contacts">Contacts</a></li>
 				</ul>
 			</div>
 			<div class="row clearfix">
@@ -116,19 +117,234 @@
 	<div id="aboutus" class="container">
 		<h1 class="h1-descr_w">about us</h1>
 		<p class="p-descr_w">SKOKOV is one of the world's leading management consulting firms. We care or our clients' business as our own, they know we're in this together</p>
-		<div class="row clearfix">
+		<div id="clients" class="row clearfix">
 			<div class="col-1_2">
 				<p class="capitalredtext">what we do</p>
 				<div class="textunderline"></div>
-			</div>
-			<p class="descr">
-				
+				<p class="descr">
+				When someone asks what we do SKOKOV, it's tempting to point out our four-decade track record for helping to transform the world's great companies into sharper, smarter, better versions of themselves. It's true, our mission is to help management teams create such high levels of economic value that together we redefine our respective industries.<br>
+				We work with top executives to help them make better decisions, convert those decisions to actions, and deliver the sustainable success they desire. For forty years, we've been passionate about achieving better results for our clients-result that go beyond financial and are uniquely tailored, pragmatic, holistic, and enduring.<br>
+				We advise global leaders on their most critical issues and opportunities: strategy, marketing, organizatios, operations, technology, transformations and mergers &amp; acquisitions, across all industries and geographies.<br>
+				Our unique approach to traditional change management, called Result Delivery&copy;,helps clients measure and manage risk and overcome the odds to realize results.
 			</p>
-			
+			</div>
+			<div class="col-1_2">
+				<p class="capitalredtext">Our clients</p>
+				<div class="textunderline"></div>
+				<div>
+					<img src="assets/img/client1.png" alt="Oracle">
+					<img src="assets/img/client2.png" alt="Sony">
+					<img src="assets/img/client3.png" alt="SanDisk">
+					<img src="assets/img/client4.png" alt="McAffee">
+					<img src="assets/img/client5.png" alt="NETFLIX">
+					<img src="assets/img/client6.png" alt="SAP">
+				</div>
+				<div class="slider-lines">					
+				</div>
+			</div>			
 		</div>
-		
+		<div id="ourteam" class="row clearfix">
+				<p class="capitalredtext">Our Team</p>
+				<div class="textunderline"></div>
+				<div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name1 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role1</p>
+							<p id="teamimg_role2">Role1</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name2 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role2</p>
+							<p id="teamimg_role2">Role2</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name3 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role3</p>
+							<p id="teamimg_role2">Role3</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name4 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role4</p>
+							<p id="teamimg_role2">Role4</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name5 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role5</p>
+							<p id="teamimg_role2">Role5</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name6 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role6</p>
+							<p id="teamimg_role2">Role6</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name7 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role7</p>
+							<p id="teamimg_role2">Role7</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name8 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role8</p>
+							<p id="teamimg_role2">Role8</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name9 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role9</p>
+							<p id="teamimg_role2">Role9</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name10 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role10</p>
+							<p id="teamimg_role2">Role10</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name11 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role11</p>
+							<p id="teamimg_role2">Role11</p>
+						</div>							
+					</div>
+					<div class="teamimg">
+						<div class="teamimg-container">
+							<p id="teamimg_name">Name12 Surname</p>
+							<div class="teamimg-line"></div>
+							<p id="teamimg_role1">Role12</p>
+							<p id="teamimg_role2">Role12</p>
+						</div>							
+					</div>
+				</div>				
+			</div>		
 	</div>
-
-	
+	<div id="videoblock">
+		<div class="container">
+			<div class="video-play"></div>
+			<div class="video-descr">
+				<h1>we blend the strategic with creative</h1>
+				<p>When someone asks what we do SKOKOV, it's tempting to point out our four-decade track record for helping to transform the world's great companies into sharper, smarter, better versions of themselves.</p>
+			</div>
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLnhwlVDiZQ" frameborder="0" allowfullscreen></iframe> -->	
+		</div>		
+	</div>
+	<div id="newsblock" class="container">
+		<div class="news-text">
+			<h1>news</h1>
+			<p>Together, we find value across boundaries, develop insights to act on, and energize teams to sustain success. We're passionate about always doing the right thing for our clients, our people and our communities, even if it isn't easy.</p>
+		</div>
+		<div class="news-pics">
+			<div id="pics1" class="row clearfix">
+				<div class="col-1_2"></div>
+				<div class="col-1_4">
+					<div class="news-pics-cell-container">
+						<h1 class="news-pics-cell-header">Why financial institutions need a new IT model</h1>
+						<div class="red-line50"></div>
+						<p class="news-pics-cell-text">Why old IT models are unlikely to deliver the competitive edge that banks, insurers and wealth management firms need from technology</p>
+						<p class="news-pics-cell-date">09.03.2014</p>
+					</div>
+				</div>
+				<div class="col-1_4"></div>
+			</div>
+			<div id="pics2" class="row clearfix">
+				<div class="col-1_4">
+					<div class="news-pics-cell-container">
+						<h1 class="news-pics-cell-header">Reimagining IT for an omnichannel world</h1>
+						<div class="red-line50"></div>
+						<p class="news-pics-cell-text">The technology that powers retail is evolving rapidly. Retailers and their IT groups will have to rise to stay ahead.</p>
+						<p class="news-pics-cell-date">08.20.2014</p>
+					</div>					
+				</div>
+				<div class="col-1_2"></div>
+				<div class="col-1_4">
+					<div class="news-pics-cell-container">
+						<h1 class="news-pics-cell-header">Making the most of generation assets in turbulent times</h1>
+						<div class="red-line50"></div>
+						<p class="news-pics-cell-text">A thorough review of a power generation portfolio informs decisions about how to reduce costs, raise revenues and make strategic plans.</p>
+						<p class="news-pics-cell-date">08.27.2014</p>
+					</div>
+				</div>
+			</div>			
+		</div>		
+	</div>
+	<div id="contacts">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-1_2">
+					<h1>skokov</h1>
+					<p>Thank you for your interest in SKOKOV. Please contact us using the information below. To locate contacts in the SKOKOV office closest to you, visit our office websites. To get the latest updates from SKOKOV, subscribe to a newsletter or connect with us on social media.</p>
+					<div class="red-line50"></div>
+					<div class="icons-info">
+						<div class="icon"><img src="assets/img/icons1.png" alt=""><p>43 gagarina street, kharkov, ukraine</p></div>
+						<div class="icon"><img src="assets/img/icons2.png" alt=""><p>+38 (057) 777-05-05</p></div>
+						<div class="icon"><img src="assets/img/icons3.png" alt=""><p>mynameisskokov@gmail.com</p></div>
+						
+					</div>
+				</div>
+				<div class="col-1_2">
+					<h1>contact</h1>
+					<div class="red-line50"></div>
+					<p>Please contact us using contact form below.</p>
+					<div class="inputdatas">
+						<form action="#" method="post">
+							<input type="text" id="firstname" value="Name">
+							<input type="email" id="mail" value="Email">
+							<input type="text" id="subject" value="Subject">
+							<TEXTAREA NAME="comments" COLS=40 ROWS=6>Message</TEXTAREA>
+							<div class="clearfix"><input type="submit" id="createacc" value="Send"></div>
+						</form>
+					</div>
+				</div>	
+			</div>		
+		</div>		
+	</div>		
+	<footer>
+			<div class="container clearfix">
+				<div class="col-1_2">
+					<p>&copy; 2014 skokov - all rights reserved</p>
+				</div>
+				<div class="col-1_2">
+					<div>
+					<ul>
+						<li><a href="https://www.linkedin.com/"><img src="assets/img/linkedin.png" alt=""></a></li>
+						<li><a href="https://www.facebook.com/"><img src="assets/img/facebook.png" alt=""></a></li>
+						<li><a href="https://twitter.com/"><img src="assets/img/twitter.png" alt=""></a></li>
+						<li><a href="https://www.youtube.com/"><img src="assets/img/youtube.png" alt=""></a></li>
+					</ul>
+					</div>				
+				</div>	
+			</div>		
+	</footer>
+<script>
+	$('.video').click(function(){this.paused?this.play():this.pause();});
+</script>	
 </body>
 </html>
