@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
 	<link rel="stylesheet" type="text/css" href="assets/grids.css">
 	<script type="text/javascript" src="assets/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap.js"></script>	
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">	
+	<script type="text/javascript" src="assets/script.js"></script>
 </head>
 <body>
 	<header>
@@ -33,7 +36,7 @@
 		</div>
 		<a class="buttonprofit button-red" href="#">Your profit</a>
 	</header>
-	<div id="services" class="container">
+	<section id="services" class="container">
 		<h1 class="h1-descr_w">our services</h1>
 		<p class="p-descr_w">Our management consulting services focus on our clients' most critical issues and opportunities. We have proven a multiplier effect from optimizing the sum of the parts, not just the individual pieces.</p>
 		<div class="row clearfix">
@@ -104,8 +107,8 @@
 				</div>			
 			</div>			
 		</div>		
-	</div>
-	<div id="contactus">
+	</section>
+	<section id="contactus">
 			<div class="container">
 				<h1 class="h1-descr_b">Contact us for a FREE, NO OBLIGATION confidential exploration of your needs</h1>
 				<!-- <div class="row"><a class="buttons button-red" href="#">Contact us</a></div> -->
@@ -113,8 +116,8 @@
 					<a class="buttons button-red" href="#">Contact us</a>
 				</div>
 			</div>
-	</div>
-	<div id="aboutus" class="container">
+	</section>
+	<section id="aboutus" class="container">
 		<h1 class="h1-descr_w">about us</h1>
 		<p class="p-descr_w">SKOKOV is one of the world's leading management consulting firms. We care or our clients' business as our own, they know we're in this together</p>
 		<div id="clients" class="row clearfix">
@@ -131,19 +134,26 @@
 			<div class="col-1_2">
 				<p class="capitalredtext">Our clients</p>
 				<div class="textunderline"></div>
-				<div>
-					<img src="assets/img/client1.png" alt="Oracle">
-					<img src="assets/img/client2.png" alt="Sony">
-					<img src="assets/img/client3.png" alt="SanDisk">
-					<img src="assets/img/client4.png" alt="McAffee">
-					<img src="assets/img/client5.png" alt="NETFLIX">
-					<img src="assets/img/client6.png" alt="SAP">
+				<div class="slider-company">
+					<div class="slider-items">
+						<img src="assets/img/client1.png" alt="Oracle">
+						<img src="assets/img/client2.png" alt="Sony">
+						<img src="assets/img/client3.png" alt="SanDisk">
+						<img src="assets/img/client4.png" alt="McAffee">
+						<img src="assets/img/client5.png" alt="NETFLIX">
+						<img src="assets/img/client6.png" alt="SAP">
+					</div>
+					<div class="slider-buttons">
+						<a class="slider-button-left" href="#"></a>
+						<a class="slider-button-right" href="#"></a>
+					</div>
+				</div>						
 				</div>
-				<div class="slider-lines">					
-				</div>
-			</div>			
-		</div>
-		<div id="ourteam" class="row clearfix">
+			</div>	
+		</div>		
+	</section>
+	<section id="ourteam" class="container">
+			<div class="row clearfix">
 				<p class="capitalredtext">Our Team</p>
 				<div class="textunderline"></div>
 				<div>
@@ -245,18 +255,20 @@
 					</div>
 				</div>				
 			</div>		
-	</div>
-	<div id="videoblock">
+	</section>
+	<section id="videoblock">
 		<div class="container">
 			<div class="video-play"></div>
+			<div id="videostart">
+			<iframe id="vplay" width="480" height="320" src="https://www.youtube.com/embed/MODJ5vTWzqs" frameborder="0"></iframe>		
+			</div>
 			<div class="video-descr">
 				<h1>we blend the strategic with creative</h1>
 				<p>When someone asks what we do SKOKOV, it's tempting to point out our four-decade track record for helping to transform the world's great companies into sharper, smarter, better versions of themselves.</p>
-			</div>
-			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLnhwlVDiZQ" frameborder="0" allowfullscreen></iframe> -->	
+			</div>					
 		</div>		
-	</div>
-	<div id="newsblock" class="container">
+	</section>
+	<section id="newsblock" class="container">
 		<div class="news-text">
 			<h1>news</h1>
 			<p>Together, we find value across boundaries, develop insights to act on, and energize teams to sustain success. We're passionate about always doing the right thing for our clients, our people and our communities, even if it isn't easy.</p>
@@ -294,8 +306,8 @@
 				</div>
 			</div>			
 		</div>		
-	</div>
-	<div id="contacts">
+	</section>
+	<section id="contacts">
 		<div class="container">
 			<div class="row clearfix">
 				<div class="col-1_2">
@@ -303,10 +315,18 @@
 					<p>Thank you for your interest in SKOKOV. Please contact us using the information below. To locate contacts in the SKOKOV office closest to you, visit our office websites. To get the latest updates from SKOKOV, subscribe to a newsletter or connect with us on social media.</p>
 					<div class="red-line50"></div>
 					<div class="icons-info">
-						<div class="icon"><img src="assets/img/icons1.png" alt=""><p>43 gagarina street, kharkov, ukraine</p></div>
-						<div class="icon"><img src="assets/img/icons2.png" alt=""><p>+38 (057) 777-05-05</p></div>
-						<div class="icon"><img src="assets/img/icons3.png" alt=""><p>mynameisskokov@gmail.com</p></div>
-						
+						<div class="icon">
+						<div class="icon-img"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+						<!-- <img src="assets/img/icons1.png" alt=""> -->
+						<p>43 gagarina street, kharkov, ukraine</p></div>
+						<div class="icon">
+						<!-- <img src="assets/img/icons2.png" alt=""> -->
+						<div class="icon-img"><i class="fa fa-phone" aria-hidden="true"></i></div>
+						<p>+38 (057) 777-05-05</p></div>
+						<div class="icon">
+						<!-- <img src="assets/img/icons3.png" alt=""> -->
+						<div class="icon-img"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+						<p>mynameisskokov@gmail.com</p></div>						
 					</div>
 				</div>
 				<div class="col-1_2">
@@ -325,7 +345,7 @@
 				</div>	
 			</div>		
 		</div>		
-	</div>		
+	</section>		
 	<footer>
 			<div class="container clearfix">
 				<div class="col-1_2">
@@ -334,17 +354,14 @@
 				<div class="col-1_2">
 					<div>
 					<ul>
-						<li><a href="https://www.linkedin.com/"><img src="assets/img/linkedin.png" alt=""></a></li>
-						<li><a href="https://www.facebook.com/"><img src="assets/img/facebook.png" alt=""></a></li>
-						<li><a href="https://twitter.com/"><img src="assets/img/twitter.png" alt=""></a></li>
-						<li><a href="https://www.youtube.com/"><img src="assets/img/youtube.png" alt=""></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 					</ul>
 					</div>				
 				</div>	
 			</div>		
 	</footer>
-<script>
-	$('.video').click(function(){this.paused?this.play():this.pause();});
-</script>	
 </body>
 </html>

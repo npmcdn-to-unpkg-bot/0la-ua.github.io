@@ -11,8 +11,7 @@
 }
 header {
 	background: rgba(0, 0, 0, 0.7) url("img/header_bg0.png") top center;
-	background-blend-mode:multiply;
-	/*background: url("img/header_bg1.png") bottom center;*/
+	background-blend-mode:multiply;	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -70,11 +69,6 @@ header .h1-descr_b {
 	margin-top: 45px;	
 	width:  calc(70%);
 }
-/*.buttons {
-	width: 220px;
-	height: 65px;
-	border-radius: 30px;
-}*/
 a.buttons {	
 	display: inline-block;
 	font: 20px/18px Verdana;
@@ -96,6 +90,9 @@ header a.buttons {
 	border-left: 10px solid #fe504f;
 	right: -14px;
 }
+.buttonprofit:hover:after {
+	border-left: 10px solid #c53f3e;
+}
 a.buttonprofit {
 	font: bold 12px/14px Verdana;
 	padding: 10px 5px;
@@ -104,19 +101,37 @@ a.buttonprofit {
 .row {
 	width: 100%;
 }
+.inputdatas input[type="submit"], 
+button, 
+.buttons {
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
 .button-red {
 	background: #fe504f;
+}
+.inputdatas input[type="submit"]:hover,
+button:hover,
+.button-red:hover {
+	background: #c53f3e;
 }
 .button-black {
 	background: #343434;
 }
+.button-black:hover {
+	background: #1a1a1a;
+}
 .h1-descr_w, .p-descr_w {
 	text-align: center;
+}
+#services {
+	padding-top: 50px;
 }
 .h1-descr_w {
 	font: bold 24px Verdana;
 	text-transform: uppercase;
-	margin-top: 50px;
 	margin-bottom: 30px;
 }
 #services p {
@@ -190,7 +205,6 @@ a.buttonprofit {
 	background-size: 5px 5px;
 	z-index: -1;
 }
-
 #contactus h1 {
 	padding-top: 110px;
 	font: bold 34px Verdana;
@@ -230,14 +244,31 @@ a.buttonprofit {
 #ourteam {
 	margin-bottom: 80px;
 }
+#ourteam .textunderline {
+	margin-top: 15px;
+	width: 50px;
+	margin-bottom: 30px;
+}
+.slider-buttons {
+	text-align: center;
+}
+.slider-button-left, .slider-button-right {
+	display: inline-block;
+	margin-right: 10px;
+	width: 35px;
+	height: 10px;
+	background: #fe504f;	
+}
+.slider-button-left:hover, .slider-button-right:hover {
+	background:#c53f3e;
+}
 .teamimg {
 	width: 200px;
 	height: 200px;
 	margin: 0;
 	padding: 0;
 	margin-left: -4px;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 .teamimg-container {
 	width: 100%;
@@ -344,6 +375,9 @@ a.buttonprofit {
 	margin:0 auto;
 	cursor: pointer;
 }
+#videostart {
+	display: none;
+}
 .video-descr {
 	width: 83%;
 	margin:0 auto;
@@ -359,6 +393,7 @@ a.buttonprofit {
 	padding-bottom: 85px;
 }
 #newsblock {
+	padding-top: 80px;
 	text-align: center;
 	margin-bottom: 80px;
 }
@@ -366,7 +401,6 @@ a.buttonprofit {
 	color: #000;
 	font: bold 24px Verdana;
 	text-transform: uppercase;
-	margin-top: 80px;
 	margin-bottom: 35px;
 }
 #newsblock .news-text p {
@@ -471,6 +505,11 @@ a.buttonprofit {
 }
 .icon {
 	margin-bottom: 20px;
+	cursor: pointer;
+}
+.icon:hover img {
+	background: rgba(0,0,0,0.7);
+	background-blend-mode: multiply;
 }
 .icon>p {
 	display: inline-block;
@@ -479,8 +518,31 @@ a.buttonprofit {
 	font: bold 12px Verdana;
 	text-transform: uppercase;
 }
-.icon>img {	
+/*.icon>img {	
 	margin-bottom: -10px;
+}*/
+.icon i {
+	color: #fe504f;
+	font-stretch: expanded;
+	font-size: 22px;
+	padding: 3px;
+}
+.icon:last-child i {
+	font-size: 16px;
+	padding-top: 5px;
+}
+.icon-img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border:1px solid #fe504f;
+	text-align: center;
+}
+.icon-img:hover {
+	border-color: #c53f3e;
+}
+.icon i:hover {
+	color: #c53f3e;
 }
 #contacts .col-1_2:last-child {
 	padding-left: 100px;
@@ -553,8 +615,15 @@ footer ul li {
 	vertical-align: middle;
 	height: 20px;
 	padding-left: 15px;
-	margin-left: 5px;
+	margin-left: 5px;	
 	border-left: 1px solid #fe504f;
+}
+footer ul li a {
+	font-size: 22px;
+	color: #fe504f;
+}
+footer ul li a:hover {
+	color: #c53f3e;
 }
 footer ul li:first-child {
 	margin-left: 0;
