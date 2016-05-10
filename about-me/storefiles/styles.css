@@ -568,12 +568,35 @@ a.button-post:hover {
 	border-radius: 15px;
 }
 #contacts {
-	background: #fff;	
+	background: #fff;
+	color: #000D3C;
+	text-transform: uppercase;
+	padding-bottom: 45px;
 }
 #contacts h1 {
-	padding-top: 25px;
-	padding-bottom: 30px;
+	padding-top: 20px;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 28px;	
+}
+#map_container {
+	width: 100%;
+	height: 200px;
+}
+.contactlink {
+	margin-left: 20px;
+}
+.contactlinks>p:not(:last-child) {
+	padding-bottom: 20px;
+}
+.contactlinks a {
+	text-decoration: none;
+	color: #0137F;
+}
+.contactlinks a:hover {
+	text-decoration: none;
+	color: #026FF;
+}
+.contactlinks a i {
+	padding-right: 10px;
 }

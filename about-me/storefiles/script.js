@@ -1,13 +1,14 @@
-// function loadMap(){
-// 	var latLong = new google.maps.LatLng(50.45,30.523333);
-// 	var mapOpt={
-// 		zoom:15,
-// 		mapTypeId:google.maps.MapTypeId.ROADMAP,
-// 		center:latLong
-// 	};
-// 	var map=new google.maps.Map(document.getElementById("map_container"),mapOpt);
-// };
+function loadMap(){
+	var latLong = new google.maps.LatLng(50.45,30.523333);
+	var mapOpt={
+		zoom:15,
+		mapTypeId:google.maps.MapTypeId.ROADMAP,
+		center:latLong
+	};
+	var map=new google.maps.Map(document.getElementById("map_container"),mapOpt);
+};
 var main=function(){
+	window.onload=loadMap;
 	$('.side-menu').click(function() {
 	    $('.menu').animate({
 			left: "0px"
