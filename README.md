@@ -7,3 +7,5 @@ for viewing details of single Pokémon, please click on a single card.
 (released due to http://pokeapi.co/)
 
 "SKOKOV" - simple landing page
+
+"medv" - plain design, resposive, with js validation
