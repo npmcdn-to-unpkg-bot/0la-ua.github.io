@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<meta charset="UTF-8">
+	<title>Order Bear</title>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Underdog&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/medium.css" />
+	<link rel="stylesheet" media="screen and (max-width: 780px)" href="css/small.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="topimg"></div>
+<div class="container">
+	<header>
+			<div class="header-text">
+				<p>Добро пожаловать в <a href="#">Наш магазин!</a></p>
+				<nav>
+					<ul class="menu">
+						<li><a href="#">Аккаунт</a></li>
+						<li><a href="#">Заказать</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Войти</a></li>			
+					</ul>
+				</nav>
+			</div>
+	</header>
+	<section>
+		<div class="row adv">
+			<div class="col-xs-4">
+			<div class="logo"></div>
+			</div>
+			<div class="col-xs-8">
+				<div class="bear-text">
+					<img src="img/medv1.png" alt="">
+					<p class="text">магазин оригинальных подарков</p>
+					<div class="list-gift">
+						<ul>
+							<li>День Св.Валентина</li>
+							<li>День Рождения</li>
+							<li>Копоративные подарки</li>
+							<li>Топ продаж</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row info">
+			<p>Конструктор</p>
+			<div class="stripe">Удачи в создании своего героя</div>
+			<div class="row medv-line">
+				<div class="col-xs-4 medvs"></div>
+				<div class="col-xs-4 medvs"></div>
+				<div class="col-xs-4 medvs"></div>
+			</div>
+		</div>
+		<div class="row choose">
+			<div class="col-xs-2" id="opt">
+				<div id="medv_choose0" class="medv_choose"></div>
+				<div id="medv_choose1" class="medv_choose"></div>
+				<div id="medv_choose2" class="medv_choose"></div>
+				<div id="medv_choose3" class="medv_choose"></div>
+			</div>
+			<div class="col-xs-10 big">
+				<form action="mail.php" enctype="data" method="post" target="_self">
+					<div class="medv_options">
+					<!-- checkbox1 -->
+							<div class="checks checks1">
+								<p>50cm</p>
+								<input type="checkbox" name="a" value="0.5">
+							</div>
+							<div class="checks checks1">
+								<p>75cm</p>
+								<input type="checkbox" name="a" value="0.75">
+							</div>
+							<div class="checks checks1">
+								<p>1m</p>
+								<input type="checkbox" name="a" value="1">
+							</div>
+							<div class="checks checks1">
+								<p>1,5m</p>
+								<input type="checkbox" name="a" value="1.5">
+							</div>
+							<div class="checks checks1">
+								<p>2m</p>
+								<input type="checkbox" name="a" value="2">
+							</div>
+						</div>
+					<!-- checkbox2 -->
+						<div class="medv_options">
+								<div class="checks checks2">
+									<p>Коричневый</p>
+									<input type="checkbox" name="b" value="b0">
+								</div>
+								<div class="checks checks2">
+									<p>Бежевый</p>
+									<input type="checkbox" name="b" value="b1">
+								</div>
+								<div class="checks checks2">
+									<p>Серый</p>
+									<input type="checkbox" name="b" value="b2">
+								</div>
+						</div>
+					<!-- checkbox3 -->				
+						<div class="medv_options">
+								<div class="row">
+										<div class="checks checks31">
+											<p>Глаза стандарт</p>
+											<input type="checkbox" name="c" value="c1">
+										</div>
+										<div class="checks checks31">
+											<p>Глаза близко</p>
+											<input type="checkbox" name="c" value="c2">
+										</div>		
+										<div class="checks checks31">
+											<p>Глаза далеко</p>
+											<input type="checkbox" name="c" value="c3">
+										</div>		
+								</div>
+								<div class="row">
+										<div class="checks checks32">
+											<p>Уши стандарт</p>
+											<input type="checkbox" name="d" value="d1">
+										</div>	
+										<div class="checks checks32">
+											<p>Уши близко</p>
+											<input type="checkbox" name="d" value="d2">
+										</div>
+										<div class="checks checks32">
+											<p>Уши далеко</p>
+											<input type="checkbox" name="d" value="d3">
+										</div>					
+								</div>
+						</div>
+					<!-- checkbox4 -->
+						<div class="medv_options">
+							<div class="checks checks2">
+								<p>Цвет1</p>
+								<input type="checkbox" name="e" value="e1">
+							</div>
+							<div class="checks checks2">
+								<p>Цвет2</p>
+								<input type="checkbox" name="e" value="e2">
+							</div>
+							<div class="checks checks2">
+								<p>Цвет3</p>
+								<input type="checkbox" name="e" value="e3">
+							</div>
+						</div>
+				</div>
+				<div class="btns">
+					<button type="reset" value="Reset">Сбросить</button>
+				</div>
+				<div class="price">
+					<p>количество<input type="number" id="num" value="1"></p>
+					<p>текущая стоимость<input type="text" id="costs" value="" readonly></p>
+				</div>
+				<div class="makeorder">
+					<button id="make_order_btn" type="submit" name="make_order" style="border:none; background:none;"><a href="javascript:;"><em id="error_size">не указан размер!</em></a></button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section>
+		<p class="descr">Плюшевый мишка - один из самых популярных и культовая в ХХ веке и начале XXI века видов игрушек: игрушечный медведь из мягкого материала. В Западной Европе и Америке он известен в основном под именем "Тедди" (англ.teddy bear, нем. Teddybar), традиционно ассоциируемым с именем президента США Теодора Рузвельта. В русском языке утеврдилось название "плюшевый мишка", хотя сейчас далеко не все игрушечные медведи этого типа делаются из плюша.</p>
+	</section>
+	<footer>
+	<ul>
+		<li><a href="">О нас</a></li>
+		<li><a href="">Информация для клиентов</a></li>
+		<li><a href="">Карта сайта</a></li>
+		<li><a href="">Поиск</a></li>
+		<li><a href="">Как заказать</a></li>
+		<li><a href="">Контакты</a></li>
+	</ul>
+	<p>2014 EvanDesign. All Rights Reserved</p>
+</footer>
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
