@@ -1,0 +1,53 @@
+table {
+	overflow: hidden;
+	position: relative;
+}
+table, th, td {
+	border:1px solid #999;
+	border-collapse: collapse;
+}
+table, tr, td,td:hover, td>p, td>p:hover {
+	box-sizing: border-box;
+	cursor: pointer;
+}
+td>p {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+tr:hover {
+	z-index: -5;
+}
+tr, td, td>p {
+	z-index: 2;
+}
+tr:hover p {
+	background: rgba(0,0,0,0.5);
+}
+td:hover {
+	z-index: -4;
+}
+td>p, td>p:hover {
+	padding: 5px;	
+}
+td>p:hover {
+	position: absolute;
+	line-height: 250px;
+	background: rgba(0,0,0,0.5);	
+	z-index: 1;
+}
+tr:nth-of-type(1)>td>p:hover {
+	top:-115px;
+}
+tr:nth-of-type(2)>td>p:hover {
+	top:-86px;
+}
+tr:nth-of-type(3)>td>p:hover {
+	top:-56px;
+}
+tr:nth-of-type(4)>td>p:hover {
+	top:-28px;
+}
+tr:nth-of-type(5)>td>p:hover {
+	top:1px;
+}
