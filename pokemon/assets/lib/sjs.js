@@ -1,5 +1,24 @@
-
-//var singleP = document.getElementsByClassName("single");
+var buttonsStyle=[
+		["Normal", "#ffffff","#8f8f8f"],
+		["Fighting", "#bfc4fd", "#595b75"],
+		["Flying", "#71e2fe", "#377281"],
+		["Poison", "#e7a7fe", "#755282"],
+		["Ground", "#fcc298", "#71533d"],
+		["Rock", "#a6b0b6", "#474c4f"],
+		["Bug", "#64cc7a", "#30613a"],
+		["Ghost", "#79fcfe", "#326768"],
+		["Steel", "98bdcc", "#5f808e"],
+		["Fire", "5f808e", "#f36731"],
+		["Water", "#aebefd", "#697abc"],
+		["Grass", "#96fd96", "#5aba5a"],
+		["Electric", "#fcf9aa", "#dfd64e"],
+		["Ice", "#cbfcf2", "#4dd8bc"],
+		["Dragon", "#d8c64d", "#fef347"],
+		["Dark", "#b9b7c6", "#7a7985"],
+		["Fairy", "#fabef2", "#987093"],
+		["Unknown", "#e0dde0", "#f6f2f5"],
+		["Shadow", "#ebebeb", "#aeaeae"],
+		["Psychic", "#b6a7c0", "#7c6889"]];
 var singleP_row=document.getElementById("row1");
 var imgURL="http://pokeapi.co/media/img/",
 	imgURL1="url('",
@@ -55,11 +74,6 @@ function getPokemons12() {
 			singleP_row.appendChild(singleP);
 		 	 
 	 	 };
-		// for (var i=0; i<singleP.length;i++){
-		// 	//singleP[i].children[1].innerHTML=arrP[num][i].nameP;
-		// 	document.getElementsByClassName("img"+(i+1))[0].style.background=imgURL1+imgURL+arrP[num][i].idP+".png"+imgURL2;
-		// 	for(var j=0;j<arrP[num][i].powerP.length;j++) addEl(arrP[num][i].powerP[j].name,"single"+(i+1));
-		// };
 		nextURL="http://pokeapi.co"+data.meta.next;
 	});
 };

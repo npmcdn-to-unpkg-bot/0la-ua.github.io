@@ -3,20 +3,22 @@
 body {
 	background: #f5f5f5;
 }
-
 .left {
 	float: left;
+}
+.clearfix {
+	content: '';
+	clear: both;
+	display: block;
 }
 .content {
 	width: 80%;
 	padding-top: 30px;
 	margin: 0 auto;	
 }
-.content:after {
+.content, .content:after {
 	display: block;
-	content: " ";
-	height: 0;
-	visibility: hidden;
+	content: "";
 	clear: both;
 }
 .content h1 {
@@ -26,29 +28,19 @@ body {
 	width: 40%;
 	text-align: center;
 }
-.infobox {
-	display: none;
-	width: 70%;	
-	margin: 0 auto;
-	padding: 10px;
-	min-height: 300px;
-	border: 1px solid black;	
-}
 /*grid*/
 .row {
 	margin-bottom: 5px;	
 	min-width: 300px;	
 }
-.row:after {
+.row, .row:after {
 	display: block;
-	content: " ";
-	height: 0;
-	visibility: hidden;
+	content: "";
 	clear: both;
 }
 [class*="col"] {
 	float: left;
-	display: inline;
+	display: table;
 	margin-right: 5px;
 }
 [class*="col"]:last-child {
@@ -96,17 +88,30 @@ body {
 	margin-bottom: 10px;
 	cursor: pointer;
 }
+.infobox {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 100px;
+	width: 300px;
+	min-width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	height: 500px;
+	min-height: 300px;
+	border: 1px solid black;	
+}
 .infoname {	
 	text-align: center;
 	font-size: 18px;
-	margin: 10px;
+	margin: 5px;
 }
 table { 
     width: 100%;
 	min-width: 200px;
     border: 1px solid black;
     border-collapse: collapse;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
    }
    th { 
    	width: 70%;
@@ -181,7 +186,7 @@ table {
 .imgg {
 	width: 80px;
 	height: 80px;
-	margin: 15px auto;
+	margin: 3px auto;
 	border: 1px solid black;	
 }
 .imgb {
@@ -189,6 +194,6 @@ table {
 	height: 180px;
     max-width: 180px;
     min-width: 80px;	
-	margin: 15px auto;
+	margin: 3px auto;
 	border: 1px solid black;		
 }
