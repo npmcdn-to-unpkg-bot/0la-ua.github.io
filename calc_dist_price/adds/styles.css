@@ -1,0 +1,46 @@
+.calc {
+	background: #999;
+	padding: 10px;
+	border-radius: 10px;
+	width: 600px;
+	height: auto;
+	margin: 0 auto;
+}
+.calc, #calcs input, #calcs select, #calcs button {
+	font: 16px Verdana;
+}
+.calc .place,.calc .change {
+	display: inline-block;	
+}
+.calc .place {
+	width: 40%;
+}
+.calc .change {
+	width: 5%;
+	cursor: pointer;
+}
+#calcs {
+	margin: 0 auto;
+}
+#calcs .place>label, #calcs input, #calcs select, #calcs button {
+	padding: 5px;
+	margin: 10px;
+}
+#calcs #to_city {
+	width: 210px;
+}
+.calc .params input {
+	width: 105px;
+}
+.calc .params label, .calc .params input {
+	display: inline-block;
+}
+
+.calc .params span {
+	display: inline-block;
+	width: 20px;
+	margin-left: -55px;
+}
+.info {
+	height: 35px;
+}

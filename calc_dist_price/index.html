@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<link rel="stylesheet" href="adds/styles.css">
+	<!-- <script src='adds/table1.json'></script> -->	
+	<script type='text/javascript' src='adds/jquery-1.10.2.js'></script>
+</head>
+<body>
+<div class="calc">
+<form id="calcs" action="">
+	<div class="place">
+		<label for="from_city">Откуда
+		<input id="from_city" type="text" value="Екатерингбург" disabled></label>
+	</div>
+	<div class="change">&harr;</div>
+	<div class="place">
+		<label for="to_city">Куда
+		<select id="to_city"></select></label>
+	</div>
+	<div class="params">
+		<label for="ves">Вес:<input id="ves" type="number" value="0" step="0.01"><span>кг</span></label>
+		<label for="obem">Объем:<input id="obem" type="number" value="0" step="0.01"><span>м<sup>3</sup></span></label>
+	</div>
+	<div class="ext">
+		<input id="negabarit" type="checkbox"><label for="negabarit">Негабарит</label>
+		<input id="obreshetka" type="checkbox"><label for="obreshetka">Обрешетка</label>
+		<input id="teplo" type="checkbox"><label for="teplo">Тепловой режим</label>
+	</div>
+	<p class="info"></p>
+	<!-- <div id="price">ok</div> -->
+	<button id="price">ok</button>
+</form>
+</div>
+	
+
+<script type='text/javascript' src='adds/calc.js'></script>
+</body>
+</html>
