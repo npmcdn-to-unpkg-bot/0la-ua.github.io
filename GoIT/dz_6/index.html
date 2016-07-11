@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dz 6</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<div class="phones inline-b">
+			<div class="phone-img inline-b"></div>
+			<p class="inline-b">(044)123-45-67</p>
+			<p class="inline-b">(044)567-89-10</p>			
+		</div>
+		<div class="login inline-b header-bg-block">
+			<form  class="inline-b" action="">
+				<div class="login-img inline-b"></div>
+				<input type="text" class="font-header" id="login_field" placeholder="логин">
+				<input type="password" class="font-header" id="password_field" placeholder="пароль">
+				<button class="font-header">вход</button><span></span>
+				<button class="font-header">регистрация</button>
+			</form>
+			<a href="#">забыли пароль?</a>
+		</div>
+		<div class="site-map inline-b">
+			<a class="site-map-img site-map1" href="#"></a>
+			<a class="site-map-img site-map2" href="#"></a>
+			<a class="site-map-img site-map3" href="#"></a>
+		</div>
+	</header>
+	<div class="slider"></div>
+	<nav class="clearfix">
+		<div class="block-buy">
+			<a class="buy-basket inline-b" href="#"></a>
+			<p class="buy-text inline-b">товаров:</p><p class="buy-digit inline-b">0</p>
+			<p class="buy-text buy-text-position inline-b">на сумму:</p><p class="buy-digit buy-digit-position inline-b">0,00 грн.</p>			
+		</div>
+		<div class="main-menu">
+			<ul>
+				<li class="active-menu"><a href="#">О компани</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id="search">
+		<div class="search-section"><!-- searchsection block 1-->
+			<h1 class="search-header">Поиск по автомобилю:</h1>
+
+			<form action="" class="clearfix">
+				
+				<div class="search-block"><!-- searchblock1-->
+					<p class="search-header">Диски:</p>
+					<div class="search-params">
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Марка <span>авто:</span></p>
+							<select id="search11_sel1" class="search-input inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Модель <span>автомобиля:</span></p>
+							<select id="search11_sel2" class="search-input inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Год выпуска <span>автомобиля:</span></p>
+							<select id="search11_sel3" class="search-input input-shorter inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Комплектация:</span></p>
+							<select id="search11_sel4" class="search-input inline-b">
+							</select>						
+						</div>					
+					</div>
+				</div><!-- endof searchblock1-->				
+				
+				<div class="search-block"><!-- searchblock2-->
+					<p class="search-header">Шины:</p>
+					<div class="search-params clearfix">
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Марка <span>авто:</span></p>
+							<select id="search12_sel1" class="search-input inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Модель <span>автомобиля:</span></p>
+							<select id="search12_sel2" class="search-input inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Год выпуска <span>автомобиля:</span></p>
+							<select id="search12_sel3" class="search-input input-shorter inline-b">
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Комплектация:</span></p>
+							<select id="search12_sel4" class="search-input inline-b">
+							</select>						
+						</div>					
+					</div>
+				</div><!-- endof searchblock2-->				
+				<input type="submit" id="search_submit_form1" class="search_submit" value="поиск...">
+			</form>
+		</div>
+		<!-- end search-section block 1-->
+		
+		<div class="search-section search-block-narrow"><!-- search-section block 2-->
+			<h1 class="search-header">поиск шин:</h1>
+			<form action="" class="form2">
+				<div class="search-block">				
+					<div class="search-params">
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">Размер:</p>
+							<select id="search21_sel1" class="search-input inline-b">
+								<option value="145" selected>145</option>
+							</select>
+							<p class="inline-b">/</p>
+							<select id="search22_sel2" class="search-input inline-b">
+								<option value=""></option>
+							</select>							
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b">R</p>
+							<select id="search3_sel3" class="search-input inline-b section2-search">
+								<option value="12" selected>12</option>
+							</select>						
+						</div>
+						<div class="search-params-row">
+							<p class="search-params-text inline-b text-left">Сезон:</p>
+							<fieldset>
+									<label for="sezon1"><input id="sezon1" name="sezon" type="checkbox">лето</label>
+									<label for="sezon2"><input id="sezon2" name="sezon" type="checkbox">зима</label>
+									<label for="sezon3"><input id="sezon3" name="sezon" type="checkbox">всесез</label>
+							</fieldset>
+						</div>							
+					</div>
+				</div>
+				<!-- endof searchblock2-->
+				<input type="submit" id="search_submit_form2" class="search_submit" value="поиск...">
+			</form>
+		</div>
+		<!-- end search block 2-->
+
+		<!-- search block 3-->
+		<div class="search-section">
+			<div class="search-block-narrow shift">
+				<div class="wrapp-search3-block1">
+					<h1 class="search-header">поиск дисков</h1>
+					<form action="" >
+
+						<div class="search-block">
+							<div class="search-params">
+								<div class="search-params-row">
+									<p class="search-params-text inline-b">Диаметр <span>диска</span>:</p>
+									<select id="search31_sel1" class="search-input inline-b">
+										<option value="14" selected>14</option>
+									</select>
+								</div>
+								<div class="search-params-row">
+									<p class="search-params-text inline-b">Количество <span>Крепежных отверстий</span>:</p>
+									<select id="search31_sel2" class="search-input inline-b narrow-select">
+										<option value="3" selected>3</option>
+									</select>						
+								</div>
+								<div class="search-params-row">
+									<p class="search-params-text inline-b">Диаметр <span>расположения крепежных отверстий</span>:</p>
+									<select id="search31_sel3" class="search-input inline-b">
+										<option value="12" selected>12</option>
+									</select>	
+								</div>
+							</div>
+						</div>
+
+						<div class="last-block"><!--last block-->
+							<div class="search-block">
+								<div class="search-params">
+									<div class="search-params-row">
+										<p class="search-params-text inline-b">ДЦО<br><span>диаметр центрального отверстия</span>:</p>
+										<select id="search32_sel1" class="search-input inline-b">
+											<option value="12" selected>12</option>
+										</select>
+									</div>
+									<div class="search-params-row">
+										<p class="search-params-text inline-b">ET<br><span>(вылет диска)</span>:</p>
+										<select id="search32_sel2" class="search-input inline-b">
+											<option value="12" selected>12</option>
+										</select>		
+									</div>						
+								</div>
+							</div>
+						</div><!--end last block-->
+						<input type="submit" id="search_submit_form3" class="search_submit" value="поиск...">
+					</form>
+
+				</div>
+			</div>
+		
+		<!-- end search block 3-->
+
+		</div>
+
+	</section><!--top selects-->
+
+	<main class="clearfix">
+<!--left aside-->	
+		<aside>
+			<div class="left-top sidebar-top">
+				<div class="top-item inline-b"></div><h2 class="inline-b">каталог продукции:</h2>
+			</div>
+
+			<div class="aside-header sidebar-top"><!--list1-->
+				<div class="left-header-item inline-b"></div><p class="inline-b">шины:</p>
+			</div>
+				<ul class="sidebar-list left-sidebar-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!--endlist1-->
+
+			<div class="aside-header sidebar-top"><!--list2-->
+				<div class="left-header-item inline-b"></div><p class="inline-b">диски:</p>
+			</div>
+				<ul class="sidebar-list left-sidebar-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!--endlist2-->
+
+			<div class="aside-header sidebar-top"><!--list3-->
+				<div class="left-header-item inline-b"></div><p class="inline-b">болты:</p>
+			</div>
+				<ul class="sidebar-list left-sidebar-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!--endlist3-->
+		</aside>
+<!--end left aside-->		
+
+<!--center - catalog of tires-->
+		<section class="center-catalog">
+			<!--row1-->
+			<div class="center-row clearfix">
+				<div class="row-block">
+					<h3>Goodyear</h3>
+					<p>Ultra Grip Extreme</p>
+					<div class="center-item-img center-item-img1"></div>
+					<p class="price">90.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Nokian</h3>
+					<p>Hakkapeliitta R</p>
+					<div class="center-item-img center-item-img2"></div>
+					<p class="price">115.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Hankook</h3>
+					<p>K 708 15565 R14</p>
+					<div class="center-item-img center-item-img3"></div>
+					<p class="price">393.00 <span>грн.</span></p>					
+				</div>							
+			</div>
+			<!--row2-->
+			<div class="center-row clearfix">
+				<div class="row-block">
+					<h3>Goodyear</h3>
+					<p>Ultra Grip Extreme</p>
+					<div class="center-item-img center-item-img1"></div>
+					<p class="price">90.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Nokian</h3>
+					<p>Hakkapeliitta R</p>
+					<div class="center-item-img center-item-img2"></div>
+					<p class="price">115.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Hankook</h3>
+					<p>K 708 15565 R14</p>
+					<div class="center-item-img center-item-img3"></div>
+					<p class="price">393.00 <span>грн.</span></p>					
+				</div>				
+			</div>
+			<!--row3-->
+			<div class="center-row clearfix">
+				<div class="row-block">
+					<h3>Goodyear</h3>
+					<p>Ultra Grip Extreme</p>
+					<div class="center-item-img center-item-img1"></div>
+					<p class="price">90.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Nokian</h3>
+					<p>Hakkapeliitta R</p>
+					<div class="center-item-img center-item-img2"></div>
+					<p class="price">115.00 <span>грн.</span></p>					
+				</div>
+				<div class="row-block">
+					<h3>Hankook</h3>
+					<p>K 708 15565 R14</p>
+					<div class="center-item-img center-item-img3"></div>
+					<p class="price">393.00 <span>грн.</span></p>					
+				</div>				
+			</div>			
+		</section>
+<!--end center - catalog of tires-->
+
+<!--right aside-->
+		<aside class="right-sidebar">
+		<form action="/">
+			<div class="left-top sidebar-top">
+				<div class="top-item inline-b"></div><h2 class="inline-b">бренды:</h2>
+			</div>
+
+			<div class="aside-header sidebar-top"><!--list1-->
+				<div class="left-header-item inline-b"></div><p class="inline-b">шины:</p>
+			</div>
+
+			<div class="sidebar-list right-sidebar-list">
+				<label for="tire1"><input id="tire1" name="brendtire" type="checkbox">Бренд 1</label>
+				<label for="tire2"><input id="tire2" name="brendtire" type="checkbox">Бренд 2</label>
+				<label for="tire3"><input id="tire3" name="brendtire" type="checkbox">Бренд 3</label>
+			</div>			
+
+			<div class="aside-header sidebar-top"><!--list2-->
+				<div class="left-header-item inline-b"></div><p class="inline-b">диски:</p>
+			</div>
+			<div class="sidebar-list right-sidebar-list">
+				<label for="disk1"><input id="disk1" name="brenddisk" type="checkbox">Бренд 1</label>
+				<label for="disk2"><input id="disk2" name="brenddisk" type="checkbox">Бренд 2</label>
+				<label for="disk3"><input id="disk3" name="brenddisk" type="checkbox">Бренд 3</label>
+			</div>	
+			<input class="right-aside-submit header-bg-block" type="submit" value="Выбрать">
+		</form>
+		</aside>
+<!--end right aside-->		
+	</main>
+	<figure>
+		<a href="#"><img src="images/adv01.png" alt=""></a>
+		<a href="#"><img src="images/adv02.png" alt=""></a>
+		<a href="#"><img src="images/adv03.png" alt=""></a>
+		<a href="#"><img src="images/adv04.png" alt=""></a>
+		<a href="#"><img src="images/adv05.png" alt=""></a>
+		<a href="#"><img src="images/adv06.png" alt=""></a>
+		<a href="#"><img src="images/adv07.png" alt=""></a>
+		<a href="#"><img src="images/adv08.png" alt=""></a>
+	</figure>
+	<footer>
+		<ul class="footer-menu">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<p>Создание сайта &copy; Global Vision</p>
+	</footer>
+</div><!--container-->
+
+	
+</body>
+</html>
