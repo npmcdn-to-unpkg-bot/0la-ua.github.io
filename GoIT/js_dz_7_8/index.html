@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 07-08</title>
+	<link rel="stylesheet" href="assets/styles.css">
+	<script src="assets/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+	<h1>Fill up form</h1>
+	<form action=""> <!-- hints on hover -->
+	<fieldset>
+		<div>
+			<label for="firstname">Firstname</label>
+			<input id="firstname" class="box1" name="firstname">
+			<p class="hint">Enter your first name, please</p>			
+		</div>
+		<div>
+			<label for="tel">Lastname</label>
+			<input id="tel" name="lastname">
+			<p class="hint">Enter your last name, please</p>
+		</div>
+		<div>
+			<label for="address">Address</label>
+			<input id="address" name="address">
+			<p class="hint">Enter your address, please</p>				
+		</div>
+  </fieldset>
+	</form> <!-- end hints on hover -->
+
+	<h1>Switch Tabs</h1>
+	<div class="tabs-box"> <!-- tabs jquery -->
+		<div class="tabs">
+			<a href="#" class="tab tab-active">EN</a>
+			<a href="#" class="tab">PT</a>
+			<a href="#" class="tab">UA</a>
+		</div>
+		<div class="tab-text-container">
+			<div class="tab-text tab-text-active">
+				<p>Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot, bicycle, automobile, train, boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.</p>
+			</div>
+			<div class="tab-text">
+				<p>Uma viagem (do latim "viaticu", pelo provençal "viatge") é o movimento de pessoas entre locais relativamente distantes, com qualquer propósito e duração, e utilizando ou não qualquer meio de transporte (público ou privado). O percurso pode ser feito por mar, terra ou ar. Também se entende como viagem todo um período de deslocações com estadias mais ou menos longas em alguns destinos.</p>
+			</div>
+			<div class="tab-text">
+				<p>Подорож — переміщення якоюсь певною територією з метою її вивчення, а також із загальноосвітньою, пізнавальною, спортивною цілями.</p>
+			</div>
+		</div>
+	</div><!-- end tabs jquery -->
+
+</div>	<!-- end wrapper -->
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 09-10</title>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/jquery.jcarousel.js"></script>
+	<script src="lib/jquery.jcarousel-pagination.js"></script>
+	<script src="lib/jcarousel.connected-carousels.js"></script>
+	<link rel="stylesheet" href="css/cusel.css">
+	<script src="lib/cusel.js"></script>
+	<script src="lib/jquery.mousewheel.js"></script>
+	<script src="lib/jScrollPane.js"></script>
+	<script src="lib/jquery.checkbox.js"></script>
+	<script src="lib/jquery.color.js"></script>
+	
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jcarousel.basic.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<nav class="menu">
+				<ul class="menu-list">
+					<li class="menu-items"><a href="#">nav1</a></li>
+					<li class="menu-items"><a href="#">nav2</a></li>
+					<li class="menu-items"><a href="#">nav3 <span class="menu-triangle"></span></a>
+						<ul class="sub-menu sub-menu1">
+							<li><a href="#">subnav1</a></li>
+							<li><a href="#">subnav2 <span class="menu-triangle"></a>
+								<ul class="sub-menu sub-menu2">
+									<li><a href="#">subnav2 1</a></li>
+									<li><a href="#">subnav2 2</a></li>
+									<li><a href="#">subnav2 3</a></li>
+									<li><a href="#">subnav2 4 <span class="menu-triangle"></a>
+										<ul class="sub-menu sub-menu3">
+											<li><a href="#">submenu3 1</a></li>
+											<li><a href="#">submenu3 2</a></li>
+											<li><a href="#">submenu3 3</a></li>
+											<li><a href="#">submenu3 4</a></li>
+										</ul>
+
+									</li>
+									<li><a href="#">subnav2 5</a></li>
+								</ul>
+							</li>
+							<li><a href="#">subnav3</a></li>
+							<li><a href="#">subnav4</a></li>
+						</ul>
+					</li>
+					<li class="menu-items"><a href="#">nav4</a></li>
+					<li class="menu-items"><a href="#">nav5 <span class="menu-triangle"></a>
+						<ul class="sub-menu">
+							<li><a href="#">subnav1</a></li>
+							<li><a href="#">subnav2</a></li>
+							<li><a href="#">subnav3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wrapper">
+		<h1>slider <a href="http://sorgalla.com/jcarousel/">jCarousel</a></h1>
+		<div class="wrapper-carousel clearfix stage">
+			<div class="jcarousel carousel-stage">
+				<ul class="clearfix">
+					<li class="carousel-item"><img src="img/img1.jpg" alt=""></li>
+					<li class="carousel-item"><img src="img/img2.jpg" alt=""></li>
+					<li class="carousel-item"><img src="img/img3.jpg" alt=""></li>
+					<li class="carousel-item"><img src="img/img4.jpg" alt=""></li>
+					<li class="carousel-item"><img src="img/img5.jpg" alt=""></li>					
+				</ul>
+				<a class="jcarousel-arrows jcarousel-prev" href="#"><span>&lsaquo;</span></a>
+				<a class="jcarousel-arrows jcarousel-next" href="#"><span>&rsaquo;</span></a>
+				<p class="jcarousel-pagination"></p>
+			</div>
+
+			<div class="navigation">
+	            <a href="#" class="prev-navigation">&lsaquo;</a>
+	            <a href="#" class="next-navigation">&rsaquo;</a>
+	            <div class="carousel carousel-navigation">
+	                <ul>
+	                	<li><img src="img/thumb_img1.jpg" alt=""></li>
+	                	<li><img src="img/thumb_img2.jpg" alt=""></li>
+	                	<li><img src="img/thumb_img3.jpg" alt=""></li>
+	                	<li><img src="img/thumb_img4.jpg" alt=""></li>
+	                	<li><img src="img/thumb_img5.jpg" alt=""></li>
+
+	                </ul>
+	            </div>
+	        </div>
+		</div>
+	</div>
+<div class="wrapper">
+	<h1>select <a href="http://www.xiper.net/collect/html-and-css-tricks/verstka-form/nice-select-jquery.html">cuSel</a></h1>
+	<form action="">
+		<select id="cusel">
+			<option value="color1">Красный</optoin>
+			<option value="color2" selected="true">Желтый</option>
+			<option value="color3">Зеленый</option>
+<!-- 			<optgroup label="Зеленый">	!cuSel doesnt support <optgroup>
+				<option value="color31">Темно-Зеленый</option>
+				<option value="color32">Светло-Зеленый</option>
+			</optgroup> -->
+			<option value="color4" disabled="true">Коричневый</option>
+			<option value="color5">Синий</option>
+		</select>
+	</form>
+</div>
+<div class="wrapper">
+	<h1>checkbox: <a href="">jQuery</a></h1>
+	<form id="form-checkbox_jquery" class="form-checkbox_jquery" action="">
+			<label for="chkbx1">checkbox1</label>
+			<span class="niceCheck">
+				<input id="chkbx1" type="checkbox" name="ch1" value="chkbox1" />
+			</span><br>
+			<label for="chkbx2">checkbox2</label>
+			<span class="niceCheck">
+				<input id="chkbx2" type="checkbox" name="ch1" checked="true" value="chkbox2"/>
+			</span><br>
+			<label for="chkbx3">checkbox3</label>
+			<span class="niceCheck">
+				<input id="chkbx3" type="checkbox" name="ch1" checked="checked" disabled="disabled" value="chkbox3"/>
+			</span>
+	</form>
+	<h1>checkbox: <a href="">CSS</a></h1>
+	<form id="form-checkbox_css" class="form-checkbox_css" action="">
+		<div>
+			<input type="checkbox" id="test-check1" />
+			<label for="test-check1">Чекбокс 1</label>	
+		</div>
+		<div>
+			<input type="checkbox" id="test-check2" checked="checked" />
+			<label for="test-check2">Чекбокс 2</label>	
+		</div>
+		<div>
+			<input type="checkbox" id="test-check3" disabled="disabled" />
+			<label for="test-check3">Чекбокс 3</label>	
+		</div>
+	</form>
+</div>
+<script src="lib/script.js"></script>
+</body>
+</html>
