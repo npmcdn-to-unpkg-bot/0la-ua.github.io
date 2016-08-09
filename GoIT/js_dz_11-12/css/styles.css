@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 960px;
+	margin: 10px auto;
+	padding: 10px;
+	border: 3px solid rgba(0,0,0,0.03);
+}
+.clearfix, .clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.title-block {
+	margin: 10px 0 5px 0;
+	font-size: 18px;
+	color: #4C3E35;
+}
+.pattern1,
+.pattern2 {
+	width: 70%;
+	margin: 0 auto;
+}
+.pattern1, .pattern1 h1,
+ .pattern2, .pattern2 h1 {
+	text-align: center;
+}
+.pattern1 img,
+.pattern2 img {
+	width: 150px;
+}
+.pattern-block {
+	text-align: left;
+	margin-top: 10px;
+	padding: 10px;
+}
+.pattern-odd {
+	background: #F6EAE4;
+}
+.pattern-even {
+	background: #fff;
+}
+.pattern1 h1+img+p,
+.pattern2 h1+img+p {
+	font-size: 14px;
+	color: #ccc;
+}
+.pattern1 ul,
+.pattern2 ul {
+	margin-left: 20px;
+}
