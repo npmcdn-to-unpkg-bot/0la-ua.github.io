@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 11-12</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jquery.mini.slider.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mini.slider.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/lodash.js"></script>
+
+</head>
+<body>
+<div class="wrapper clearfix">
+	<p class="title-block">my mini-slider plugin</p>
+	<div class="slider-box clearfix">
+		<div class="arrows prev arrow-inactive"><span>&lsaquo;</span></div>
+		<div class="slider">
+			<ul class="slider-list">
+				<li class="slider-item">
+					<img src="img/img1.jpg" alt="">
+					<p>image_1</p>
+				</li>
+				<li class="slider-item">
+					<img src="img/img2.jpg" alt="">
+					<p>image_2</p>
+				</li>
+				<li class="slider-item">
+					<img src="img/img3.jpg" alt="">
+					<p>image_3</p>
+				</li>
+				<li class="slider-item">
+					<img src="img/img4.jpg" alt="">
+					<p>image_4</p>
+				</li>
+				<li class="slider-item">
+					<img src="img/img5.jpg" alt="">
+					<p>image_5</p>
+				</li>
+			</ul>
+		</div>
+		<div class="arrows next"><span>&rsaquo;</span></div>
+	</div>
+	<p class="description">files to include to html.document - "jquery.mini.slider.js", "jquery.mini.slider.css"</p>
+</div>
+
+<div class="wrapper">
+	<p class="title-block">pattern1 <a href="http://ejohn.org/blog/javascript-micro-templating/">JavaScript Micro-Templating</a></p>
+	<div class="pattern1">
+		<script type="text/html" id="tmpl1">
+			<h1><%= datas[0].name %></h1>
+			<img src="<%= datas[0].src %>" alt="pic">
+			<p><%= datas[1].profession %></p>
+			<hr>
+			<% for (var i = 2; i < datas.length; i++) { %>
+			<div class="pattern-block <%=(i % 2 == 1 ? ' pattern-even' : ' pattern-odd') %>" >
+				<h3><%= datas[i].header %></h3>
+				<p>
+				<% if (i===2) { %>
+				<ul>
+					<% for(var j=0; j< datas[i].text.length; j++) { %>
+						<li> <%= datas[i].text[j] %> </li>
+					<% } %>
+				</ul>
+				<% } else { %>
+					<%= datas[i].text %>
+				<% } %>
+				</p>
+			</div>
+			<% } %>
+			
+		</script>
+	</div>
+</div>
+
+
+<div class="wrapper">
+	<p class="title-block">pattern2 <a href="https://lodash.com/docs#template">LoDash</a></p>
+	<div class="pattern2">
+		<script type="text/html" id="tmpl2">
+			<h1><%= datas[0].name %></h1>
+			<img src="<%= datas[0].src %>" alt="pic">
+			<p><%= datas[1].profession %></p>
+			<hr>
+			<% for (var i = 2; i < datas.length; i++) { %>
+			<div class="pattern-block <%=(i % 2 == 1 ? ' pattern-even' : ' pattern-odd') %>" >
+				<h3><%= datas[i].header %></h3>
+				<p>
+				<% if (i===2) { %>
+				<ul>
+					<% for(var j=0; j< datas[i].text.length; j++) { %>
+						<li> <%= datas[i].text[j] %> </li>
+					<% } %>
+				</ul>
+				<% } else { %>
+					<%= datas[i].text %>
+				<% } %>
+				</p>
+			</div>
+			<% } %>
+		</script>
+	</div>
+</div>
+
+<script src="js/script.js"></script>
+	
+</body>
+</html>
