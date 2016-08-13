@@ -1,2 +1,0 @@
-# dz_3
-HTML/CSS DZ3
