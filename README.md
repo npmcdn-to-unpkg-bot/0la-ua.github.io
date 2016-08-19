@@ -1,5 +1,5 @@
 # 0la-ua.github.io
-# junior  
+# trainee/junior  
 
 ## testing tasks  
 Pokemon/ -  using pokeAPI; creates Pokémon's info in list of 12; to download next list of items click "Loard more" button.
