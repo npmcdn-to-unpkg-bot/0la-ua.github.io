@@ -21,5 +21,7 @@ training/ - folder of junior's markup and JS/jQuery lessons:
   js_dz_11-12/ - slider, using templates [JavaScript Micro-Templating](http://ejohn.org/blog/javascript-micro-templating/) and [LoDash](https://lodash.com/docs#template);  
   
   js_dz_13-14/ - local storage, template, try-catch, modal message;  
+  js_dz_13-14/ - search of gif-images with search-input (script.js: gif-search API; classes.js: example of objects with __proto__);  
+  
 
 
