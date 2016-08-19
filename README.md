@@ -21,7 +21,7 @@ training/ - markup and JS/jQuery lessons:
   
   js_dz_13-14/ - local storage, template, try-catch, modal message;  
   
-  js_dz_13-14/ - search of gif-images with search-input (script.js: gif-search API; classes.js: example of objects with __proto__);  
+  js_dz_14-15/ - search of gif-images with search-input (script.js: gif-search API; classes.js: example of objects with __proto__);  
   
 
 
