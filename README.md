@@ -7,8 +7,8 @@ for viewing details oclick on a single card. (released due to http://pokeapi.co/
 
 medv/ - plain design, resposive, with js validation
 
-## frontend lessons
-training/ - markup and JS/jQuery lessons:  
+## training/ - markup and JS/jQuery:
+  
   exzamen/ - responsive landing from PSD with svg sprite, bootstrap, styles for IE8 (pollyfill&conditional comments);  
   
   js_dz_5_6/ - timer with split function, js;  
