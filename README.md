@@ -21,7 +21,15 @@ medv/ - plain design, resposive, with js validation
   
   js_dz_13-14/ - local storage, template, try-catch, modal message;  
   
-  js_dz_15-16/ - search of gif-images with search-input (script.js: gif-search API; classes.js: example of objects with __proto__);  
+  js_dz_15-16/ - search of gif-images with search-input (script.js: gif-search API; classes.js: example of objects with __proto__); 
+  
+  js_grunt/ - grunt base settings;  
+  
+  js_gulp/ - gulp base settings;   
+  
+  js_requirejs/ - ToDoList: templates  and MVC modules linked via require.js;  
+  
+  js_jasmine/ - simple jasmine unit test - testing js, without DOM;  
   
 
 
