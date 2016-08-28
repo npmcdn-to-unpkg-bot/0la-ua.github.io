@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 23-24</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/require.js" data-main="js/app.js"></script>
+</head>
+<body>
+
+	
+<div class="block--ToDo">
+	<h1>ToDo list:</h1>
+	<div class="block--ToDo__add clearfix">
+		<input type="text" value=''>
+		<button class="block--ToDo__btn">add</button>
+	</div>	
+	<ol class="block--ToDo__items">
+		<script type="text/template" id="tmpl-list">
+		</script>
+
+	</ol>
+</div>
+
+<script type="text/template" id="list-form">
+	<% for (var i=0; i< data.length; i++) { %>
+		<li class="<%=(i % 2 == 1 ? 'item-odd' : 'item-even') %>" ><input type="text" value="<%= data[i] %>">
+		<span data-value="<%= data[i] %>" class="remove-item">x</span></li>
+	<% }; %>
+	
+</script>
+</body>
+</html>

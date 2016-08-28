@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: 'Baloo Tamma', cursive;
+}
+body {
+	background: #CCE5FF;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.block--ToDo {
+	width: 60%;
+	min-width:340px;
+	margin: 0 auto;	
+}
+
+ol.block--ToDo__items {
+	background: #3399ff;
+	padding: 10px;
+	margin-top: 15px;
+	font-family: 'Indie Flower', cursive;
+	
+}
+ol.block--ToDo__items li {
+	margin: 15px 20px;
+}
+ol.block--ToDo__items li.item-odd input {
+	background: #cce5ff;
+}
+ol.block--ToDo__items li.item-even input {
+	background: #cbddef;
+}
+ol.block--ToDo__items li input {
+	width: 90%;
+	background: none;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid navy;
+}
+ol.block--ToDo__items li > span {
+	color: navy;
+	font-family: 'Orbitron', sans-serif;
+	cursor: default;
+}
+.block--ToDo__add button,
+.block--ToDo__add input {
+	vertical-align: middle;
+}
+.block--ToDo__add button {
+	width: 20%;
+	float:right;
+	font-family: Tahoma, sans-serif;
+	font-size: 1.1em;
+	padding: 7px;
+}
+.block--ToDo__add input {
+	width: 70%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+	padding: 5px 10px;
+}
