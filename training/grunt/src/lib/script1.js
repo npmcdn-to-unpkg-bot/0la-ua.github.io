@@ -1,1 +1,0 @@
-docTitle = document.title;console.log('hello world');
