@@ -1,0 +1,30 @@
+// @for $i from 1 to 12 {
+// 	.col-big-#{$i}, .col-med-#{$i},.col-small-#{$i}, .col-mob-#{$i} {
+// 		width: 100% / $i;
+// 	}
+// }
+
+[class*='col-'] {
+  float: left;
+  padding-right: 10px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.rows {
+    width: 100%;
+}
+
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'], [class*='col-']:after, [class*='col-']:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
